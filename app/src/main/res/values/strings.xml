@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ComicByKotlin</string>
+    <string name="tab_one">推荐</string>
+    <string name="tab_two">排行</string>
+    <string name="tab_three">分类</string>
+    <string name="action_about">关于我</string>
+
+</resources>
