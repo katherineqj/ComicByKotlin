@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         fragments.add(SortFragment())
         val titles:List<String> = strings.map(this::getString)
         viewpager.adapter = ViewPagerAdapter(fragments,titles,supportFragmentManager)
-        viewpager.offscreenPageLimit = 1
+        viewpager.offscreenPageLimit = 2
         tab.setupWithViewPager(viewpager)
 
     }

@@ -8,9 +8,11 @@ import android.view.ViewGroup
 /**
  * Created by katherine on 6/11/17.
  */
-class ViewPagerAdapter(val fragments: List<Fragment>,val nameList:List<String>,val fm:FragmentManager)
-    : FragmentPagerAdapter(fm){
-    override fun getItem(position: Int): android.support.v4.app.Fragment  = fragments[position]
+class ViewPagerAdapter(
+        val fragments: List<Fragment>,
+        val nameList:List<String>,
+        val fm:FragmentManager) : FragmentPagerAdapter(fm){
+    override fun getItem(position: Int):Fragment  = fragments[position]
     override fun getCount(): Int =fragments.size
     override fun getPageTitle(position: Int): CharSequence =nameList[position]
     override fun destroyItem(container: ViewGroup?, position: Int, `object`: Any?) {
