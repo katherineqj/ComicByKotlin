@@ -25,6 +25,8 @@ import java.util.ArrayList
  */
 class SortActivity:AppCompatActivity() {
     companion object {
+
+
         val INTENT_LINK = "link"
         val INTENT_COVER = "cover"
         val INTENT_TITLE = "title"
