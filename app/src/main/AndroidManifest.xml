@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".mvp.view.ChapterActivity"></activity>
         <activity android:name=".mvp.view.PagerActivity"></activity>
+        <activity android:name=".mvp.view.SortActivity"></activity>
     </application>
 
 </manifest>
