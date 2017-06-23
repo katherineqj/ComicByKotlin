@@ -64,9 +64,9 @@ class ChapterActivity:AppCompatActivity(){
         recyclerView.adapter = adapter
     }
     private fun jump2Pager(position: Int) {
-     /*   var intent = Intent(this, PagerActivity().javaClass)
-        intent.putExtra(PagerActivity.INTENT_LINK, mData[position].link)
-        startActivity(intent)*/
+        var intent = Intent(this, PagerActivity().javaClass)
+        intent.putExtra(PagerActivity.INTENT_LINK, mDate[position].link)
+        startActivity(intent)
     }
 
     override fun onResume() {

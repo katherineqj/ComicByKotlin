@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".mvp.view.ChapterActivity"></activity>
+        <activity android:name=".mvp.view.PagerActivity"></activity>
     </application>
 
 </manifest>
