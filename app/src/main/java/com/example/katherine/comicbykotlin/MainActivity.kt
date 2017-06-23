@@ -8,10 +8,10 @@ import android.view.MenuItem
 import com.example.katherine.comicbykotlin.adapter.ViewPagerAdapter
 
 import com.example.katherine.comicbykotlin.mvp.view.HomeFragment
-import com.example.katherine.comicbykotlin.mvp.view.RankFragment
 import com.example.katherine.comicbykotlin.mvp.view.SortFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
+import me.lancer.comicface_kotlin.mvp.book.fragment.RankFragment
 
 class MainActivity : AppCompatActivity() {
     val strings:ArrayList<Int> = arrayListOf(R.string.tab_one,R.string.tab_two,R.string.tab_three)

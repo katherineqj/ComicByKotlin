@@ -108,4 +108,63 @@ class BookPresenter():Presenter<ArrayList<Book>> {
         }
         return list
     }
+    fun rankContent(url: String): java.util.ArrayList<Book> {
+        val list = java.util.ArrayList<Book>()
+        val html = getJsonString(url)
+        val all = JSONObject(html)
+        val code = all.getInt("code")
+        if (code == 1) {
+            val data = all.getJSONObject("data")
+            val stateCode = data.getInt("stateCode")
+            val message = data.getString("message")
+            if (stateCode == 1 && message.equals("成功")) {
+                val returnData = data.getJSONObject("returnData")
+                val comics = returnData.getJSONArray("comics")
+                var i: Int = 0
+                while (i < comics.length()) {
+                    val comic = comics.get(i) as JSONObject
+                    val title = comic.getString("name")
+                    val category = comic.getString("description")
+                    val cover = comic.getString("cover")
+                    val link = USE_URL().BOOK_URL + comic.getInt("comicId")
+                    val bean = Book(title, category, 1, cover, link)
+                    list.add(bean)
+                    i++
+                }
+            }
+        }
+        return list
+    }
+
+
+    fun rankTitle(url: String): java.util.ArrayList<Book> {
+        val list = java.util.ArrayList<Book>()
+        val html = getJsonString(url)
+        val all = JSONObject(html)
+        val code = all.getInt("code")
+        if (code == 1) {
+            val data = all.getJSONObject("data")
+            val stateCode = data.getInt("stateCode")
+            val message = data.getString("message")
+            if (stateCode == 1 && message.equals("成功")) {
+                val returnData = data.getJSONObject("returnData")
+                val rankingList = returnData.getJSONArray("rankinglist")
+                var i: Int = 0
+                while (i < rankingList.length()) {
+                    val ranking = rankingList.get(i) as JSONObject
+                    val title = ranking.getString("title")+"排行"
+                    val category = ranking.getString("subTitle")
+//                    val cover = ranking.getString("cover")
+                    val link = USE_URL().RANK_CONTENT_URL+ranking.getInt("argValue")
+                    val bean = Book(title, category, 0, "", link)
+                    list.add(bean)
+                    list.addAll(rankContent(link))
+                    i++
+                }
+            }
+
+        }
+        return list
+    }
+
 }
