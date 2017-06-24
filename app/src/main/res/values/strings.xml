@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">KATHIE漫画</string>
+    <string name="app_name">PACOMIC</string>
     <string name="tab_one">推荐</string>
     <string name="tab_two">排行</string>
     <string name="tab_three">分类</string>
+    <string name="toorbar_title">PAPAComic</string>
+    <string name="toorbar_subtitle">by kathieqin 啾</string>
     <string name="action_about">秦洁写的KOTLIN</string>
     <string name="network_error">网络加载失败，请重试！</string>
     <string name="toorbar_one">关于作者</string>
-    <string name="toorbar_two">移动应用开发实验室</string>
-
-
+    <string name="toorbar_two">关于实验室</string>
+    <string name="about_one">Katherine秦洁</string>
+    <string name="about_two">移动应用开发实验室</string>
 </resources>
