@@ -43,10 +43,15 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         //当客户点击菜单当中的某一个选项时，会调用该方法
         val id = item.itemId
-        if (id == R.id.action_about){
+        if (id == R.id.menu_my){
            /*val intent = Intent(this,)
             startActivity(intent)
             return true*/
+        }
+        if (id == R.id.menu_room){
+            /*val intent = Intent(this,)
+             startActivity(intent)
+             return true*/
         }
         return super.onOptionsItemSelected(item)
     }

@@ -3,9 +3,14 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".ui.activity.MainActivity">
 	<item
-		android:id="@+id/action_about"
-	    android:orderInCategory="100"
-	    app:showAsAction="never"
-	    android:title="@string/action_about"
-		/>
+		android:id="@+id/menu_my"
+		android:orderInCategory="1"
+		android:icon="@mipmap/cute"
+		android:title="@string/toorbar_one"/>
+	<item
+		android:id="@+id/menu_room"
+		android:orderInCategory="2"
+		android:icon="@mipmap/hh"
+		android:title="@string/toorbar_two"/>
+
 </menu>

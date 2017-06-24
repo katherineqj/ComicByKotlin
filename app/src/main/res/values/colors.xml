@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2196F3</color>
-    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorPrimary">#ed93cf</color>
+    <color name="colorPrimaryDark">#e987c0</color>
     <color name="colorAccent">#FFFFFF</color>
 
     <color name="black">#000000</color>
@@ -11,7 +11,7 @@
     <color name="purple">#9B27AF</color>
     <color name="deeppurple">#673AB6</color>
     <color name="indigo">#3F51B4</color>
-    <color name="blue">#2196F3</color>
+    <color name="blue">#f4a8ca</color>
     <color name="lightblue">#03A8F3</color>
     <color name="cyan">#00BBD3</color>
     <color name="teal">#009587</color>
