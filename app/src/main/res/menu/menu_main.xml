@@ -5,12 +5,12 @@
 	<item
 		android:id="@+id/menu_my"
 		android:orderInCategory="1"
-		android:icon="@mipmap/cute"
+		android:icon="@mipmap/editor"
 		android:title="@string/toorbar_one"/>
 	<item
 		android:id="@+id/menu_room"
 		android:orderInCategory="2"
-		android:icon="@mipmap/cute"
+		android:icon="@mipmap/org"
 		android:title="@string/toorbar_two"/>
 
 

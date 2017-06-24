@@ -13,14 +13,10 @@ import com.example.katherine.comicbykotlin.R
 import com.example.katherine.comicbykotlin.USE_URL
 import com.example.katherine.comicbykotlin.adapter.BookAdapter
 import com.example.katherine.comicbykotlin.mvp.model.Book
-import com.example.katherine.comicbykotlin.mvp.model.getJsonString
 import com.example.katherine.comicbykotlin.mvp.presenter.BookPresenter
-import kotlinx.android.synthetic.main.fragment_book.*
 import org.jetbrains.anko.async
 import org.jetbrains.anko.uiThread
 import java.util.ArrayList
-
-
 /**
  * Created by katherine on 6/12/17.
  */

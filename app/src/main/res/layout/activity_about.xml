@@ -56,7 +56,7 @@
                 android:id="@+id/progressBar1"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
-                android:layout_height="3dip"
+                android:layout_height="6dip"
                 android:progressDrawable="@drawable/pg"
                 android:visibility="gone"
                 />
